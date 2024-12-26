@@ -1,5 +1,5 @@
 {
-    "app_version": "2024-09-30 11:31:42",
-    "app_download": "https://drive.google.com/file/d/1EW7loNLGRcAj7WCvKbzHrfo34Y4Fq4C9/view?usp=sharing",
-    "app_note": "แสดงประวัติบริการเป็นจำนวนครั้งในปีงบประมาณ (เมื่อระบุเลขที่ประชาชน ครบ 13 หลัก)\nแสดงประวัติการ Authentication 9 ครั้งหลังสุด (ต้องเชื่อมต่อ สปสช.ก่อนด้วยรูปแบบ New Authen Code)\nแสดงระบบแจ้งข่าว (แสดงรายละเอียดโปรแกรม,Link Download Update,อื่นๆ)"
+    "app_version": "2024-12-25 15:03:38",
+    "app_download": "https://drive.google.com/file/d/1wp-dj4H-GiVvirMfKYEi0-rjH03DVvhx/view?usp=sharing",
+    "app_note": "+ เพิ่มเมนู Drug Use สำหรับประมวลผลการใช้ยา"
 }
