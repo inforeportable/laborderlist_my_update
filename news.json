@@ -1,5 +1,5 @@
 {
     "Show": "0",
-    "DateTime": "[2024-12-26 13:28:33]",
-    "Message": "ประเมิน CPP ประจำปี 2568 ไม่ประเมิน ไม่มีสิทธิ์ได้รับเงิน\n\nที่มาจาก https://eclaim.nhso.go.th/webComponent/news/NewsDetailAction.do?id=1075"
+    "DateTime": "[2025-10-02 08:44:45]",
+    "Message": "แจ้งผู้ใช้งานโปรแกรมแกรม Lab Order List \nเมนู \"ใช้ระบบตรวจสอบสิทธิ์ แบบ UC Authentication MX\"\nจะไม่สามารถใช้งานได้ ตามประกาศของ สปสช. ที่จะปิดระบบ ERM ภายในวันที่ 31 ธันวาคม 2568 นี้\nจึงแจ้งทราบและให้ทุกหน่วยงานที่ใช้งานโปรแกรม Lab Order List\nเตรียมความพร้อมเข้าสู่ระบบ Single Register Mangement (SRM) \nซึ่งสามารถใช้งานร่วมกับโปรแกรม Lab Order List ได้\nผ่านทาง เมนู \"Extension Browser Chrome,Edge,Opera\" แทน"
 }
