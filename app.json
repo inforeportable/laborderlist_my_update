@@ -1,5 +1,5 @@
 {
-    "app_version": "2024-12-25 15:03:38",
-    "app_download": "https://drive.google.com/file/d/1wp-dj4H-GiVvirMfKYEi0-rjH03DVvhx/view?usp=sharing",
-    "app_note": "+ เพิ่มเมนู Drug Use สำหรับประมวลผลการใช้ยา"
+    "app_version": "2026-03-04 18:51:54",
+    "app_download": "https://drive.google.com/file/d/1fCxPZ8_4FJxsgzrrS3x7HB_1rMq_0Hji/view",
+    "app_note": "- แก้ไขเบื้องต้น กลับมาใช้ API แบบ UC Authentication Mx แบบเก่า\n- Browser Extension ไม่สามารถใช้งานได้ อยู่ระหว่างการแก้ไขโดยการใช้ SRM API แทน"
 }
