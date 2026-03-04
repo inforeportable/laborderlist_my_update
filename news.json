@@ -1,5 +1,5 @@
 {
     "Show": "0",
     "DateTime": "[2025-10-02 08:44:45]",
-    "Message": "แจ้งผู้ใช้งานโปรแกรมแกรม Lab Order List \nเมนู \"ใช้ระบบตรวจสอบสิทธิ์ แบบ UC Authentication MX\"\nจะไม่สามารถใช้งานได้ ตามประกาศของ สปสช. ที่จะปิดระบบ ERM ภายในวันที่ 31 ธันวาคม 2568 นี้\nจึงแจ้งทราบและให้ทุกหน่วยงานที่ใช้งานโปรแกรม Lab Order List\nเตรียมความพร้อมเข้าสู่ระบบ Single Register Mangement (SRM) \nซึ่งสามารถใช้งานร่วมกับโปรแกรม Lab Order List ได้\nผ่านทาง เมนู \"Extension Browser Chrome,Edge,Opera\" แทน"
+    "Message": "แจ้งผู้ใช้งานโปรแกรมแกรม Lab Order List \nกราบขออภัยที่ไม่สามารถใช้งาน Code จาก Extension :cupcopy ขณะนี้ได้เนื่องจากการปรับระบบตรวจสอบสิทธิ์ใหม่\nหากต้องการตรวจสอบสิทธิ์ สามารถใช้ nhso_token.txt จากโปรแกรม UC Authentication Mx แบบเดิมแทน (แบบเก่าที่เชื่อมกับ Hosxp)"
 }
