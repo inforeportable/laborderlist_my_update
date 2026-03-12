@@ -9,7 +9,7 @@ SET @e_date = date('2026-09-30') ;
 SET @hba1c = 'hba1c' ;
 SET @k = '0' ;
 SET @now = date(now()) ;
-SET @script = 'cloud [2026-03-11 04:47:35]' ;
+SET @script = 'cloud [2026-03-12 09:07:22]' ;
 -- แก้ DECIMAL(5,2)
 
 SELECT 
