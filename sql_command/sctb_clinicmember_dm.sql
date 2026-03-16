@@ -9,8 +9,9 @@ SET @e_date = date('2026-09-30') ;
 SET @hba1c = 'hba1c' ;
 SET @k = '0' ;
 SET @now = date(now()) ;
-SET @script = 'cloud [2026-03-12 09:07:22]' ;
+SET @script = 'Local-Clound [2026-03-16 07:59:04]' ;
 -- แก้ DECIMAL(5,2)
+-- เพิ่ม วันที่ล่าสุดบริการ,วันที่ล่าสุดHBA1C,ประชากรTYPE
 
 SELECT 
 cast(@k := @k+1 as char) as  '[0] No.',
@@ -47,11 +48,11 @@ cast(pp.tel  as char) as '[30] โทรศัพท์' ,
 cast(''   as char) as '[31] ประเภทความเสี่ยง',
 cast(pp.icd as char) as '[32] ICD10' ,
 cast(pp.last_hba1c_value as char) as '[33] HBA1C',
-cast( '' as char) as    '[34] โรคภูมิคุ้มกัน',
-cast( '' as char) as    '[35] B24',
+cast( pp.person_type as char) as    '[34] โรคภูมิคุ้มกัน|ประชากรTYPE',
+cast( @script as char) as    '[35] B24',
 cast( '' as char) as    '[36] เรือนจำ',
-cast( '' as char) as    '[37] วันที่แรกรับ',
-cast( '' as char) as    '[38] วันที่พ้นโทษ',
+cast( pp.last_visit as char) as    '[37] วันที่แรกรับ|วันที่ล่าสุดเข้ารับบริการ',
+cast( pp.last_visit_hba1c as char) as    '[38] วันที่พ้นโทษ|วันที่ล่าสุดHBA1C',
 cast( '' as char) as    '[39] เลขที่ประชาชนคนป่วย',
 cast( 'No' as char) as    '[40] ประวัติป่วย',
 cast( 'No' as char) as    '[41] ประวัติสัมผัส',
@@ -95,7 +96,10 @@ cast(person.death as char) as localCheck_death,
 cast(house_regist_type.house_regist_type_name as char) as localCheck_person_type,
 cast(clinicmember.last_hba1c_value as decimal(5,2)) as last_hba1c_value,
 (SELECT max(ovstdiag.icd10) FROM ovstdiag WHERE LEFT(ovstdiag.icd10,3) BETWEEN 'E10' AND 'E14' AND ovstdiag.hn = clinicmember.hn) as icd,
-concat_ws(',',person.mobile_phone ,person.hometel,person.home_phone) as tel
+concat_ws(',',person.mobile_phone ,person.hometel,person.home_phone) as tel,
+cast(clinicmember.lastvisit as char) as last_visit,
+cast(clinicmember.last_hba1c_date as char) as last_visit_hba1c,
+cast(house_regist_type.export_code as char) as person_type
 FROM clinicmember
 LEFT OUTER JOIN person ON clinicmember.hn = person.patient_hn
 LEFT OUTER JOIN village on person.village_id = village.village_id
@@ -128,7 +132,10 @@ cast(person.death as char) as localCheck_death,
 cast(house_regist_type.house_regist_type_name as char) as localCheck_person_type,
 cast(clinicmember.last_hba1c_value as decimal(5,2)) as last_hba1c_value,
 (SELECT max(ovstdiag.icd10) FROM ovstdiag WHERE LEFT(ovstdiag.icd10,3) BETWEEN 'E10' AND 'E14' AND ovstdiag.hn = clinicmember.hn) as icd,
-concat_ws(',',person.mobile_phone ,person.hometel,person.home_phone) as tel
+concat_ws(',',person.mobile_phone ,person.hometel,person.home_phone) as tel,
+cast(clinicmember.lastvisit as char) as last_visit,
+cast(clinicmember.last_hba1c_date as char) as last_visit_hba1c,
+cast(house_regist_type.export_code as char) as person_type
 FROM clinicmember
 LEFT OUTER JOIN person ON clinicmember.hn = person.patient_hn
 LEFT OUTER JOIN village on person.village_id = village.village_id
