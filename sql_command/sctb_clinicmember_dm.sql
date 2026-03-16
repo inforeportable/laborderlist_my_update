@@ -9,15 +9,15 @@ SET @e_date = date('2026-09-30') ;
 SET @hba1c = 'hba1c' ;
 SET @k = '0' ;
 SET @now = date(now()) ;
-SET @script = 'Local-Clound [2026-03-16 07:59:04]' ;
+SET @script = 'Local-Cloud [2026-03-16 07:59:04]' ;
 -- แก้ DECIMAL(5,2)
 -- เพิ่ม วันที่ล่าสุดบริการ,วันที่ล่าสุดHBA1C,ประชากรTYPE
 
 SELECT 
 cast(@k := @k+1 as char) as  '[0] No.',
 cast(@now as char)  as '[1] วันที่คัดกรอง', 
-@hospital_code as '[2] รหัสหน่วยบริการ',
-@hospital_name as '[3] ชื่อหน่วยบริการ',
+cast(@hospital_code as char) as '[2] รหัสหน่วยบริการ',
+cast(@hospital_name as char) as '[3] ชื่อหน่วยบริการ',
 cast('-' as char) as '[4] คิว',
 cast('-' as char) as '[5] HN',
 cast(pp.cid as char) as '[6] เลขที่ประชาชน',
