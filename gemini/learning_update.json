@@ -1,0 +1,14 @@
+{
+  "app_info": {
+    "name": "MyDesktopApp",
+    "latest_version": "2026-03-26 10:00:00"
+  },
+  "update_details": {
+    "url": "https://example.com/download/setup.exe",
+    "changelog": [
+      "เพิ่มระบบแจ้งเตือนใหม่",
+      "ปรับปรุงประสิทธิภาพการทำงาน",
+      "แก้ไขข้อผิดพลาดจากเวอร์ชันก่อนหน้า"
+    ]
+  }
+}
