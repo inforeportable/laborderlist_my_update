@@ -1,5 +1,5 @@
 {
-    "app_version": "2026-03-17 08:10:46",
-    "app_download": "https://drive.google.com/file/d/1DdvhudeTQFP49xBa8HMJBfzZK0OSQMrD/view?usp=sharing",
+    "app_version": "2026-06-30 09:30:28",
+    "app_download": "https://drive.google.com/file/d/1-SJb9bhUz6NSBPYPwSqNPFD-BSijIYb7/view?usp=sharing",
     "app_note": "- แก้อาการหมดอายุ\n- แก้ไขเบื้องต้น กลับมาใช้ API แบบ Token UC Authentication Mx แบบเก่า (แบบเชื่อม hosxp เก่า)\n- เพิ่มเมนูคัดกรองวัณโรค"
 }
