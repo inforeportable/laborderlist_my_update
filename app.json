@@ -1,5 +1,5 @@
 {
-    "app_version": "2026-06-30 09:30:28",
-    "app_download": "https://drive.google.com/file/d/1-SJb9bhUz6NSBPYPwSqNPFD-BSijIYb7/view?usp=sharing",
-    "app_note": "- แก้อาการหมดอายุ\n- แก้ไขเบื้องต้น กลับมาใช้ API แบบ Token UC Authentication Mx แบบเก่า (แบบเชื่อม hosxp เก่า)\n- เพิ่มเมนูคัดกรองวัณโรค"
+    "app_version": "2026-11-16 07:59:27",
+    "app_download": "https://drive.google.com/file/d/1oKBwLSekzEKZECyq5Gm0wjCwiWKN-Y6T/view?usp=drive_link",
+    "app_note": "- เพิ่ม ตรวจสอบสิทธิ์ SRM ทั้งแบบ บุคคล และ แบบกลุ่ม SRM Smart Card Single Sign-On\n- เพิ่ม อ่านบัตรประชาชน  EFormAgent\n- เพิ่ม Excel Add-In ตรวจสอบ DataBridge_API_Tool V006.xlsm"
 }
